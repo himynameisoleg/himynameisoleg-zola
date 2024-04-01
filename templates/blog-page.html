@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+  <h3><a href="javascript:history.back()">&larr; Back</a></h3>
+  <h1 class="title">{{ page.title }}</h1>
+  <p>{{ page.date }}</p>
+  {{ page.content | safe }}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+// If need, change your variables before importing Bulma
+// e.g.:
+// $title-color: #ff0000;
+
+// @import "~bulma/bulma.sass";
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+$m-blue: #0bd3d3;
+$m-green: #64e8ba;
+$m-purple: #ca5fa6;
+$m-pink: #f36886;
+$m-orange: #fa8282;
+$m-yellow: #ffaf65;
+$m-white: #ffffff;
+$m-black: #000000;
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo-circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  background: linear-gradient(-45deg, $m-yellow, $m-orange, $m-pink, $m-purple);
+  background-size: 200% 200%;
+  animation: gradientAnimation 7s ease infinite;
+  
+}
+
+.photo-circle {
+  width: 112px;
+  height: 112px;
+  border-radius: 100%;
+  background: url("images/site/portrait-bw.png") center center;
+  background-size: 112px 112px;
+}
+
+.site-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>himynameisoleg</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<div class="site-container">
+  <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/#/">
+        <div class="logo-circle"></div>
+      </a>
+      <a class="navbar-item" href="/#/">
+        <div class="has-text-weight-bold">himynameisoleg</div>
+      </a>
+      <div role="button" tabIndex="0" class="navbar-burger"
+        aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </div>
+    </div>
+
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="/" class="navbar-item">
+          Home
+        </a>
+        <a href="/about/about" class="navbar-item">
+          About
+        </a>
+        <a href="/blog/" class="navbar-item">
+          Blog
+        </a>
+        <a href="/uses/uses" class="navbar-item">
+          Uses
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item mt-2">
+          <div>
+            <a href="https://github.com/himynameisoleg" target="_blank">
+              <img src="/icons/github_icon.svg" class="mr-3">
+            </a>
+
+            <a href="https://linkedin.com/in/olegperchyk/" target="_blank">
+              <img src="/icons/linkedin_icon.svg" class="mr-3">
+            </a>
+
+            <a href="https://instagram.com/tomyumgoons" target="_blank">
+              <img src="/icons/instagram_icon.svg" class="mr-3">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <section class="site-content section" style="margin-top: 20px;">
+      <div class="columns is-centered">
+        <div class="column is-8"> {% block content %} {% endblock %}</div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong id="dynamic-year">&copy; 2024 himynameisoleg</strong>
+      </p>
+      <p>Powered by <a href="https://www.getzola.org" target="_blank">Zola</a>. Styled with <a href="https://bulma.io/" target="_blank">Bulma</a>.</p>
+      <Social />
+    </div>
+  </footer>
+</div>
+
+</html>
+
+<script>
+  // hamburger toggle responsive menu
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.querySelector('.navbar-menu');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+
+    // Get the current year and set it in the footer
+    const year = new Date().getFullYear();
+    document.getElementById('dynamic-year').textContent = `© ${year} himynameisoleg`;
+  });
+
+  
+</script>
