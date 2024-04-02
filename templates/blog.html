@@ -8,7 +8,8 @@
   <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
   {% for page in section.pages %}
   <li>
-    <p>{{ page.date }}</p>
+    <strong>{{ page.date }}</strong>
+    <br/>
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
     <br/>
   {% endfor %}

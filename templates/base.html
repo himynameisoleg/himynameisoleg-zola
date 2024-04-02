@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
+<script src="https://kit.fontawesome.com/5f779c4494.js" crossorigin="anonymous"></script>
+
 <div class="site-container">
   <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -47,15 +49,21 @@
         <div class="navbar-item mt-2">
           <div>
             <a href="https://github.com/himynameisoleg" target="_blank">
-              <img src="/icons/github_icon.svg" class="mr-3">
+              <span class="icon is-large">
+                <i class="fab fa-lg fa-github"></i>
+              </span>
             </a>
 
             <a href="https://linkedin.com/in/olegperchyk/" target="_blank">
-              <img src="/icons/linkedin_icon.svg" class="mr-3">
+              <span class="icon is-medium">
+                <i class="fab fa-lg fa-linkedin"></i>
+              </span>
             </a>
 
             <a href="https://instagram.com/tomyumgoons" target="_blank">
-              <img src="/icons/instagram_icon.svg" class="mr-3">
+              <span class="icon is-large">
+                <i class="fab fa-lg fa-instagram"></i>
+              </span>
             </a>
           </div>
         </div>
@@ -64,7 +72,7 @@
   </nav>
 
   <body>
-    <section class="site-content section" style="margin-top: 20px;">
+    <section class="site-content section" style="margin-top: 40px">
       <div class="columns is-centered">
         <div class="column is-8"> {% block content %} {% endblock %}</div>
       </div>
