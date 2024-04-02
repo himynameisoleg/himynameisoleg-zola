@@ -127,6 +127,13 @@ Well thats all it really took. It was a really fun project and I highly encourag
 Looking ahead, I am thinking for the next big replatform I'll try a slightly different approach. I want to build  out on  traditional hosted solution like Ruby on Rails, Laravel or Rocket and try out CloudFlare [caching](https://developers.cloudflare.com/cache/).
 
 Till then, L8er!
+
+
+# Links
+Zola Repo: [github.com/himynameisoleg/himynameisoleg-zola](https://github.com/himynameisoleg/himynameisoleg-zola)
+Gatsby Repo: [github.com/himynameisoleg/himynameisoleg-gatsby](https://github.com/himynameisoleg/himynameisoleg-gatsby)
+Website: [himynameisoleg.com](https://himynameisoleg.com)
+
  
 
 
