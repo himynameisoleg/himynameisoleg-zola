@@ -60,9 +60,9 @@ Sundays were spent on "light reading".
 My work week, Mon-Fri, I spent about 1-2 hours per day drilling problem sets and reviewing.
 Saturdays were spent on a longer comprehensive review of the weeks topics. Similar to Mon-Fri just more diverse set of problems. Here is how the schedule looked:
 
-|          | Sun | Mon | Tue | Wed | Tr  | Fri | Sat |
-| -------- | --- | --- | --- | --- | --- | --- | --- |
-| Sequence | 0   | 1   | 1   | 1   | 1   | 1   | 2   |
+|     | Sun | Mon | Tue | Wed | Tr  | Fri | Sat |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|     | 0   | 1   | 1   | 1   | 1   | 1   | 2   |
 
 
 ![calendar](../../images/blog/calendar.jpeg)
